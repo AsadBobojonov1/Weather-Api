@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main__wrapper">
+        
+        <div class="titls__wrapper">
+            <h1 class="Weather__title">Weather App</h1>
+            <form id="change-location" class="form__class">
+                <label 
+                    class="label__class" 
+                    for="city">
+                        Search City
+                </label>
+                <input 
+                    type="text"
+                    name="city"
+                    class="form-control"
+                    autocomplete="off" >
+                </form>
+            </div>
+            <div id="card" class="card__wrapper dspnone ">
+                <div class="icon_container">
+                    <img id="weather-icon" class="icon" src="" alt="">
+                </div>  
+                
+                <div id="details" class="text_items">
+                    <h5 class="city__name">City name</h5>
+                    <p>Clouds</p>
+                    <div>
+                        <span>TEMP</span>
+                        <span>&deg;C</span>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+        <script src="./api.js"></script>
+        <script src="./app.js"></script>
+</body>
+</html>
